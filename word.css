@@ -72,9 +72,6 @@ a:hover {
 	text-align: center;
 }
 
-
-/* add end */
-
 .content {
 	width: 1190px;
 	margin: 0 auto;
@@ -130,13 +127,15 @@ a:hover {
 	margin-right: 10px;
 }
 
+.hot a:first-child,
+.hot a:nth-child(5) {
+	color: #FF7700;
+}
+
 .car {
 	float: right;
 	width: 180px;
 }
-
-
-/* first-end*/
 
 .nav {
 	background-color: #FF7700;
@@ -151,50 +150,49 @@ a:hover {
 
 .nav li:first-child {
 	width: 200px;
+	background-color: #1D7AD9;
 	height: 45px;
-	background-color: dodgerblue;
-	font-family: "微软雅黑";
-	font-size: 16px;
 	text-align: center;
 	line-height: 45px;
 	color: #fff;
-	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 16px;
 }
 
 .nav li a {
 	display: inline-block;
 	padding: 0 35px;
 	height: 45px;
-	font-size: 16px;
 	line-height: 45px;
+	color: #fff;
 	font-family: "微软雅黑";
-	color: #FFFFFF;
+	font-size: 16px;
 }
 
 .nav li.current a,
 .nav li a:hover {
-	background-color: #DF2B37;
+	background-color: #F15500;
 }
 
 .nav li:last-child {
 	display: inline-block;
 	width: 25px;
 	height: 14px;
-	background: url(img/whole.png)no-repeat -154px 0;
+	background: url(../img/whole.png) no-repeat -154px 0;
+	position: absolute;
 	top: 5px;
 	right: 225px;
-	position: absolute;
 }
 
 .subnav {
 	float: left;
 	width: 196px;
-	border: 2px solid #1E90FF;
+	border: 2px solid #1D7AD9;
 	margin-right: 10px;
 }
 
 .subnavcon {
-	border-bottom: 1px dashed #737373;
+	border-bottom: 1px dashed #ddd;
 	position: relative;
 }
 
@@ -206,7 +204,7 @@ a:hover {
 	font-family: "微软雅黑";
 	font-size: 16px;
 	color: #1D7AD9;
-	background: url(img/ico3.png) no-repeat center right;
+	background: url(../img/ico3.png) no-repeat right center;
 }
 
 .subnavcon dl dd {
@@ -214,13 +212,13 @@ a:hover {
 	margin-top: 10px;
 }
 
-.searchcon dl dd a {
+.subnavcon dl dd a {
 	display: inline-block;
 	margin-right: 10px;
 }
 
 .subno {
-	z-index: 888;
+	z-index: 999;
 	display: none;
 	position: absolute;
 	left: 196px;
@@ -230,16 +228,115 @@ a:hover {
 	background-color: #fff;
 }
 
-.subnavcon:hover dl a {
-	color: #fff;
-}
-
 .subnavcon:hover .subno {
 	display: block;
 }
 
 .subnavcon:hover dl {
-	background-color: #1D7AD9;
+	background-color:#D49CC8 ;
 	cursor: pointer;
 }
 
+.subnavcon:hover dl a {
+	color: #fff;
+}
+
+.subnavcon:hover dl dt {
+	color: #fff;
+	background: url(../img/ico4.png) no-repeat right center;
+}
+
+.banner {
+	float: left;
+	width: 755px;
+	height: 353px;
+	overflow: hidden;
+	margin-top: 10px;
+	position: relative;
+}
+
+.banspan {
+	position: absolute;
+	right: 20px;
+	bottom: 20px;
+}
+
+.banspan span {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	background-color: #000;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 18px;
+	color: #fff;
+	margin-right: 10px;
+}
+
+.banspan span:hover,
+.banspan span.current {
+	background-color: #f70;
+	cursor: pointer;
+}
+
+.fuli {
+	margin-top: 20px;
+	border: 1px solid #ddd;
+	border-top: 2px solid #F5619C;
+}
+
+.left {
+	float: left;
+	width: 250px;
+	height: 485px;
+	overflow: hidden;
+	position: relative;
+}
+
+.leftspan {
+	position: absolute;
+	left: 70px;
+	bottom: 50px;
+}
+
+.leftspan span {
+	display: inline-block;
+	width: 30px;
+	height: 4px;
+	background-color: #000;
+	margin-right: 10px;
+}
+
+.leftspan span.current,
+.leftspan span:hover {
+	background-color: #f70;
+	cursor: pointer;
+}
+
+.middle {
+	float: left;
+	height: 485px;
+	border-right: 1px solid #ddd;
+	width: 712px;
+	padding-left: 15px;
+}
+
+.middle dl {
+	float: left;
+	width: 160px;
+	margin-right: 16px;
+	margin-top: 20px;
+}
+
+.middle dl dt img {
+	width: 160px;
+	height: 160px;
+}
+
+.middle dl dd {
+	line-height: 24px;
+}
+
+.middle dl strong {
+	color: #f70;
+}
